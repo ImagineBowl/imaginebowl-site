@@ -1,12 +1,14 @@
-import Image from "next/image";
+"use client";
+
 import Link from "next/link";
+import ThemeLogo from "@/components/ThemeLogo";
 
 type LogoSize = "sm" | "md" | "lg";
 
 const SIZES: Record<LogoSize, { box: string; px: number; pad: string }> = {
-  sm: { box: "h-8 w-8 rounded-lg", px: 32, pad: "p-1" },
-  md: { box: "h-9 w-9 rounded-xl", px: 36, pad: "p-1" },
-  lg: { box: "h-12 w-12 rounded-2xl", px: 48, pad: "p-1.5" },
+  sm: { box: "h-8 w-8 rounded-lg", px: 32, pad: "p-0.5" },
+  md: { box: "h-9 w-9 rounded-xl", px: 36, pad: "p-0.5" },
+  lg: { box: "h-12 w-12 rounded-2xl", px: 48, pad: "p-1" },
 };
 
 interface BrandLogoProps {
@@ -25,18 +27,13 @@ export default function BrandLogo({
   const s = SIZES[size];
 
   const mark = (
-    <span
-      className={`relative shrink-0 overflow-hidden bg-white shadow-lg ring-1 ring-border-subtle grid place-items-center group-hover:scale-110 transition-transform duration-300 ${s.box}`}
-    >
-      <Image
-        src="/logo.png"
-        alt="ImagineBowl"
-        width={s.px}
-        height={s.px}
-        className={`h-full w-full object-contain ${s.pad}`}
-        priority={size === "md"}
-      />
-    </span>
+    <ThemeLogo
+      width={s.px}
+      height={s.px}
+      className={`h-full w-full object-contain ${s.pad}`}
+      priority={size === "md"}
+      containerClassName={`relative shrink-0 overflow-hidden shadow-lg ring-1 ring-border-subtle grid place-items-center group-hover:scale-110 transition-transform duration-300 ${s.box}`}
+    />
   );
 
   const content = (

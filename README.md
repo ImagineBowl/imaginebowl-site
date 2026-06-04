@@ -69,10 +69,13 @@ array and a card + detail page are generated automatically.
 
 | File | Use |
 | --- | --- |
-| `public/logo.png` | Official studio mark (navbar, footer, About, Open Graph) |
+| `assets/logo-light-mode.png` | Source — black mark on white (light UI) |
+| `assets/logo-dark-mode.png` | Source — white mark on black (dark UI) |
+| `public/logo.png` | Light theme mark (navbar, About, Open Graph) |
+| `public/logo-light.png` | Dark theme mark |
 | `public/favicon-32.png`, `public/apple-touch-icon.png` | Browser / home screen |
 
-Regenerate from the source asset: `python3 scripts/generate-logos.py`
+Regenerate PNGs: `python3 scripts/generate-logos.py`
 
 ### Product / brand icons
 

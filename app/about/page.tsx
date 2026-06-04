@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
-import Image from "next/image";
 import Link from "next/link";
+import AboutStudioLogo from "@/components/AboutStudioLogo";
 import Icon from "@/components/Icon";
 import Reveal from "@/components/Reveal";
 import { CONTACT_EMAIL, GITHUB_ORG } from "@/lib/products";
@@ -51,15 +51,7 @@ export default function AboutPage() {
           </Reveal>
           <Reveal className="lg:col-span-5" delay={150}>
             <div className="relative">
-              <div className="aspect-square rounded-2xl overflow-hidden bg-white shadow-lg ring-1 ring-border-subtle grid place-items-center p-16">
-                <Image
-                  src="/logo.png"
-                  alt="ImagineBowl"
-                  width={320}
-                  height={320}
-                  className="w-full h-full object-contain p-4"
-                />
-              </div>
+              <AboutStudioLogo />
               <div className="absolute -bottom-6 -left-6 bg-surface-container border border-border-subtle p-6 rounded-xl shadow-2xl hidden md:block">
                 <div className="flex items-center gap-4">
                   <div className="w-12 h-12 rounded-full bg-primary/20 flex items-center justify-center">

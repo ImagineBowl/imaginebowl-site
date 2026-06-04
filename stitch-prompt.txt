@@ -1,0 +1,109 @@
+================================================================
+GOOGLE STITCH PROMPT — ImagineBowl Studio Website
+================================================================
+
+Design a modern, polished marketing website for an indie software
+studio called "ImagineBowl". ImagineBowl builds privacy-first,
+AI-powered tools and apps for iOS, macOS, and the web. The tone is
+clean, confident, and craft-focused — think a boutique indie studio
+(like Panic, Raycast, or Linear), not a big corporate SaaS. I already
+have a logo/app icon for ImagineBowl — leave a placeholder for it in
+the navbar and footer.
+
+----------------------------------------------------------------
+OVERALL STYLE
+----------------------------------------------------------------
+- Dark-first theme with a refined accent color (deep indigo/violet or
+  electric blue), generous whitespace, large modern sans-serif
+  headings (Inter or similar), subtle gradients and soft glow accents.
+- Rounded cards (rounded-2xl), soft shadows, smooth hover states,
+  micro-interactions.
+- Fully responsive (desktop, tablet, mobile). Mobile-first navigation
+  with a hamburger menu.
+- Premium, minimal, lots of breathing room. High contrast, accessible.
+
+----------------------------------------------------------------
+PAGES / SCREENS TO DESIGN
+----------------------------------------------------------------
+
+1. HOME / LANDING PAGE
+- Sticky top navbar: ImagineBowl logo (placeholder) on the left; nav
+  links (Products, About, GitHub) on the right; subtle "Get in touch"
+  button.
+- Hero section: bold headline like "We build AI-powered tools, crafted
+  with care." Subheadline describing ImagineBowl as an independent
+  software studio making private, local-first apps. Two buttons:
+  "Explore Products" and "View on GitHub". Subtle animated gradient or
+  abstract bowl/orb motif in the background.
+- Trust/quick-stats strip: e.g. "7 products · iOS · macOS · Web ·
+  Open source".
+- Featured products grid (responsive cards). Each card: app icon
+  placeholder, product name, one-line description, platform tags
+  (iOS / macOS / Web / Chrome), and a status badge (Live / Beta /
+  Coming soon). Cards listed below.
+- A "Why ImagineBowl" section: 3–4 feature columns with icons —
+  "Privacy-first / Local AI", "Native & fast", "Open source",
+  "Crafted UX".
+- Footer: logo, short blurb, columns for Products / Company / Connect
+  (GitHub, email), copyright.
+
+2. PRODUCTS LISTING PAGE
+- Header with title "Products" and a short intro.
+- Filterable grid (filter chips: All, iOS, macOS, Web). Same card
+  design as the home grid.
+
+3. PRODUCT DETAIL PAGE TEMPLATE (one reusable layout)
+- Large hero with app icon placeholder, product name, tagline,
+  platform + status badges, and CTA buttons ("Download" / "App Store" /
+  "View on GitHub" — use placeholders).
+- Screenshot gallery / device mockup area (placeholders).
+- Features section: 3–6 feature blocks with icon + title + short text.
+- "How it works" section (numbered steps).
+- Tech/credits row and a back-to-products link.
+
+4. ABOUT PAGE
+- Studio story: ImagineBowl is an indie studio building AI-powered,
+  privacy-respecting software. Mission statement, a "What we believe"
+  values list, and a contact/CTA block.
+
+----------------------------------------------------------------
+PRODUCT LINEUP (use this real content to populate cards & pages)
+----------------------------------------------------------------
+
+1. Sonance — iOS — Live
+   "A real-time chromatic instrument tuner with sub-cent pitch
+   detection."  Tags: iOS, Audio.
+
+2. Raven — iOS — Beta
+   "A local-first audiobook player with on-device Whisper transcripts
+   and background playback."  Tags: iOS, Audio, AI.
+
+3. QuranDaily — iOS — Beta
+   "Read and listen to the Quran daily with synced recitation,
+   translation, and offline support."  Tags: iOS.
+
+4. EQfi — macOS — Beta
+   "An AI-powered system-wide equalizer that auto-tunes your sound
+   using a local LLM."  Tags: macOS, Audio, AI.
+
+5. VibeRite — macOS — Beta
+   "A native writing assistant that improves selected text anywhere,
+   powered by local Ollama — no cloud."  Tags: macOS, AI.
+
+6. AudioConverter — Web — Live
+   "A fast, beautiful audio converter supporting MP3, WAV, FLAC, AAC,
+   OGG, and M4A."  Tags: Web, Audio.
+
+7. AI Page Summarizer — Chrome Extension — Live
+   "Summarize any webpage in one click, with your choice of local
+   Ollama, ChatGPT, or Gemini Nano."  Tags: Web, AI.
+
+----------------------------------------------------------------
+RECURRING COMPONENTS STITCH SHOULD PRODUCE
+----------------------------------------------------------------
+navbar, footer, product card (with icon, badge, tags), status badge,
+button (primary/secondary), feature block, section header.
+
+Emphasize the studio's identity: independent, AI-powered,
+privacy-first, open source (links to GitHub repos).
+================================================================

@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import Link from "next/link";
 import Icon from "@/components/Icon";
 import Reveal from "@/components/Reveal";
@@ -50,8 +51,14 @@ export default function AboutPage() {
           </Reveal>
           <Reveal className="lg:col-span-5" delay={150}>
             <div className="relative">
-              <div className="aspect-square rounded-2xl overflow-hidden border border-border-subtle bg-gradient-to-br from-surface-container to-surface-container-lowest grid place-items-center">
-                <Icon name="blur_on" className="text-[160px] text-primary/40" filled />
+              <div className="aspect-square rounded-2xl overflow-hidden bg-white shadow-lg ring-1 ring-border-subtle grid place-items-center p-16">
+                <Image
+                  src="/logo.png"
+                  alt="ImagineBowl"
+                  width={320}
+                  height={320}
+                  className="w-full h-full object-contain p-4"
+                />
               </div>
               <div className="absolute -bottom-6 -left-6 bg-surface-container border border-border-subtle p-6 rounded-xl shadow-2xl hidden md:block">
                 <div className="flex items-center gap-4">
@@ -129,7 +136,7 @@ export default function AboutPage() {
                 href={GITHUB_ORG}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="bg-transparent border border-border-subtle text-on-surface font-bold px-10 py-5 rounded-xl hover:bg-white/5 hover:border-primary transition-all duration-300 inline-flex items-center justify-center gap-2"
+                className="bg-transparent border border-border-subtle text-on-surface font-bold px-10 py-5 rounded-xl hover-muted hover:border-primary transition-all duration-300 inline-flex items-center justify-center gap-2"
               >
                 <Icon name="code" />
                 Explore the code

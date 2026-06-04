@@ -65,7 +65,7 @@ export default function HomePage() {
               href={GITHUB_ORG}
               target="_blank"
               rel="noopener noreferrer"
-              className="w-full sm:w-auto bg-transparent border border-border-subtle text-on-surface px-8 py-4 rounded-xl font-bold text-lg hover:bg-white/5 transition-all duration-200"
+              className="w-full sm:w-auto bg-transparent border border-border-subtle text-on-surface px-8 py-4 rounded-xl font-bold text-lg hover-muted transition-all duration-200"
             >
               View on GitHub
             </a>

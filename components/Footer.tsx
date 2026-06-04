@@ -1,4 +1,5 @@
 import Link from "next/link";
+import BrandLogo from "./BrandLogo";
 import Icon from "./Icon";
 import { CONTACT_EMAIL, GITHUB_ORG, products } from "@/lib/products";
 
@@ -9,14 +10,7 @@ export default function Footer() {
     <footer className="w-full py-section-gap border-t border-border-subtle bg-surface">
       <div className="grid grid-cols-1 md:grid-cols-4 gap-gutter max-w-container-max mx-auto px-gutter">
         <div className="col-span-1">
-          <div className="flex items-center gap-3 mb-4">
-            <span className="grid place-items-center h-8 w-8 rounded-lg bg-gradient-to-br from-primary to-[#7c5cff] text-on-primary">
-              <Icon name="blur_on" className="text-[18px]" filled />
-            </span>
-            <span className="font-headline-md text-headline-md font-bold text-on-surface">
-              ImagineBowl
-            </span>
-          </div>
+          <BrandLogo size="sm" className="mb-4" />
           <p className="text-text-muted text-sm leading-relaxed mb-6">
             An independent software studio building private, local-first,
             AI-powered tools.

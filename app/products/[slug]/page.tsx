@@ -57,7 +57,7 @@ export default function ProductDetailPage({
                   {product.platforms.map((p) => (
                     <span
                       key={p}
-                      className="font-mono-label text-mono-label uppercase tracking-widest text-on-surface-variant bg-white/5 px-2.5 py-1 rounded-full"
+                      className="font-mono-label text-mono-label uppercase tracking-widest text-on-surface-variant bg-on-surface/5 px-2.5 py-1 rounded-full"
                     >
                       {p}
                     </span>
@@ -88,7 +88,7 @@ export default function ProductDetailPage({
               href={product.repo}
               target="_blank"
               rel="noopener noreferrer"
-              className="bg-transparent border border-border-subtle text-on-surface px-8 py-4 rounded-xl font-bold hover:bg-white/5 hover:border-primary transition-all duration-200 text-center inline-flex items-center justify-center gap-2"
+              className="bg-transparent border border-border-subtle text-on-surface px-8 py-4 rounded-xl font-bold hover:bg-on-surface/5 hover:border-primary transition-all duration-200 text-center inline-flex items-center justify-center gap-2"
             >
               <Icon name="code" />
               View on GitHub
@@ -162,7 +162,7 @@ export default function ProductDetailPage({
             {product.tech.map((t) => (
               <span
                 key={t}
-                className="font-mono-label text-mono-label text-on-surface-variant bg-white/5 px-3 py-1.5 rounded-full"
+                className="font-mono-label text-mono-label text-on-surface-variant bg-on-surface/5 px-3 py-1.5 rounded-full"
               >
                 {t}
               </span>

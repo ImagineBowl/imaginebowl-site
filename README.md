@@ -65,12 +65,20 @@ array and a card + detail page are generated automatically.
 }
 ```
 
+### Studio logo
+
+| File | Use |
+| --- | --- |
+| `public/logo.png` | Official studio mark (navbar, footer, About, Open Graph) |
+| `public/favicon-32.png`, `public/apple-touch-icon.png` | Browser / home screen |
+
+Regenerate from the source asset: `python3 scripts/generate-logos.py`
+
 ### Product / brand icons
 
-Product tiles use a gradient + [Material Symbols](https://fonts.google.com/icons)
-icon (the `icon` and `accent` fields) so nothing depends on missing artwork. To
-use real app icons instead, drop PNGs in `public/icons/` and swap `ProductTile`
-to render an `<Image>`.
+Set `iconImage: "/icons/your-app.png"` on a product in `lib/products.ts`. Drop
+PNGs in `public/icons/`. Without `iconImage`, tiles use gradient + Material
+Symbols.
 
 ## Deployment (Vercel + imagine-bowl.com)
 

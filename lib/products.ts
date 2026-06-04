@@ -15,10 +15,12 @@ export interface Product {
   platforms: Platform[];
   tags: string[];
   status: Status;
-  /** Material Symbols icon name used for the product tile */
+  /** Material Symbols icon name used when no custom image */
   icon: string;
-  /** Tailwind gradient classes for the icon tile background */
+  /** Tailwind gradient classes for the fallback tile background */
   accent: string;
+  /** Path under /public for a real app icon (e.g. /icons/sonance.png) */
+  iconImage?: string;
   repo: string;
   downloadUrl?: string;
   downloadLabel?: string;
@@ -39,8 +41,10 @@ export const products: Product[] = [
     tags: ["iOS", "Audio"],
     status: "Live",
     icon: "graphic_eq",
-    accent: "from-[#4b8eff] to-[#adc6ff]",
+    accent: "from-[#2D9B63] to-[#E6A821]",
+    iconImage: "/icons/sonance.png",
     repo: "https://github.com/ImagineBowl/Sonance",
+    downloadUrl: "https://apps.apple.com/app/sonance/id6775628127",
     downloadLabel: "App Store",
     features: [
       { icon: "music_note", title: "Chromatic tuning", description: "Real-time A440 chromatic detection with note name and octave." },
@@ -67,7 +71,8 @@ export const products: Product[] = [
     tags: ["iOS", "Audio", "AI"],
     status: "Beta",
     icon: "headphones",
-    accent: "from-[#7c5cff] to-[#adc6ff]",
+    accent: "from-[#1a1a1a] to-[#4a4a4a]",
+    iconImage: "/icons/raven.png",
     repo: "https://github.com/ImagineBowl/Raven",
     downloadLabel: "Join Beta",
     features: [

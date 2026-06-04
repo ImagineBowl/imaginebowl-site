@@ -74,7 +74,7 @@ export default function HomePage() {
 
         <Reveal className="mt-24 py-6 border-y border-border-subtle w-full max-w-container-max">
           <p className="font-mono-label text-mono-label text-text-muted uppercase tracking-widest">
-            {products.length} products · iOS · macOS · Web · Open source
+            Indie · Native apps · On-device AI · Open source
           </p>
         </Reveal>
       </section>

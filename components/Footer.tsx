@@ -4,7 +4,7 @@ import Icon from "./Icon";
 import { CONTACT_EMAIL, GITHUB_ORG, products } from "@/lib/products";
 
 export default function Footer() {
-  const topProducts = products.slice(0, 4);
+  const topProducts = products.filter((p) => p.featured);
 
   return (
     <footer className="w-full py-section-gap border-t border-border-subtle bg-surface">

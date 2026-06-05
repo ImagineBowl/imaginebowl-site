@@ -19,7 +19,7 @@ const jetbrains = JetBrains_Mono({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://imagine-bowl.com"),
+  metadataBase: new URL("https://www.imagine-bowl.com"),
   title: {
     default: "ImagineBowl — AI-powered tools, crafted with care",
     template: "%s — ImagineBowl",
@@ -30,7 +30,7 @@ export const metadata: Metadata = {
     title: "ImagineBowl",
     description:
       "Private, local-first, AI-powered tools for iOS, macOS, and the web.",
-    url: "https://imagine-bowl.com",
+    url: "https://www.imagine-bowl.com",
     siteName: "ImagineBowl",
     type: "website",
     images: [{ url: "/logo.png", width: 1024, height: 1024, alt: "ImagineBowl" }],

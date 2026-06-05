@@ -228,7 +228,7 @@ export const products: Product[] = [
 ];
 
 export const GITHUB_ORG = "https://github.com/ImagineBowl";
-export const CONTACT_EMAIL = "aminhas933@gmail.com";
+export const CONTACT_EMAIL = "hello@imagine-bowl.com";
 
 export function getProduct(slug: string): Product | undefined {
   return products.find((p) => p.slug === slug);
@@ -239,4 +239,5 @@ export const platformFilters: ("All" | Platform)[] = [
   "iOS",
   "macOS",
   "Web",
+  "Chrome",
 ];

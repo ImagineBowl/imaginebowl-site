@@ -6,7 +6,7 @@ import { useEffect, useState } from "react";
 import BrandLogo from "./BrandLogo";
 import Icon from "./Icon";
 import ThemeToggle from "./ThemeToggle";
-import { GITHUB_ORG } from "@/lib/products";
+import { CONTACT_EMAIL, GITHUB_ORG } from "@/lib/products";
 
 const LINKS = [
   { href: "/products", label: "Products" },
@@ -63,7 +63,7 @@ export default function Navbar() {
         <div className="flex items-center gap-2.5">
           <ThemeToggle className="hidden md:flex" />
           <a
-            href="mailto:hello@imagine-bowl.com"
+            href={`mailto:${CONTACT_EMAIL}`}
             className="hidden md:inline-block bg-primary text-on-primary px-5 py-2 rounded-full text-sm font-semibold hover:brightness-110 active:scale-[0.98] transition-all duration-200 whitespace-nowrap"
           >
             Get in touch
@@ -108,7 +108,7 @@ export default function Navbar() {
             )
           )}
           <a
-            href="mailto:hello@imagine-bowl.com"
+            href={`mailto:${CONTACT_EMAIL}`}
             className="bg-primary text-on-primary px-6 py-3 rounded-full font-semibold text-center hover:brightness-110 transition-all"
           >
             Get in touch

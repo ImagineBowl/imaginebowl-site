@@ -100,6 +100,7 @@ export const products: Product[] = [
     tags: ["iOS"],
     status: "Beta",
     icon: "menu_book",
+    iconImage: "/icons/qurandaily.png",
     accent: "from-[#19c37d] to-[#adc6ff]",
     repo: "https://github.com/ImagineBowl/QuranDaily",
     downloadLabel: "Join Beta",
@@ -129,6 +130,7 @@ export const products: Product[] = [
     icon: "equalizer",
     accent: "from-[#ff7a45] to-[#ffb595]",
     repo: "https://github.com/ImagineBowl/EQfi",
+    downloadUrl: "https://github.com/ImagineBowl/EQfi/releases/download/v1.0.0/EQfi-1.0.0.dmg",
     downloadLabel: "Download",
     features: [
       { icon: "auto_awesome", title: "AI mode", description: "Detects now playing, looks up genre, and generates an EQ with Ollama." },

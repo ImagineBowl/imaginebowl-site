@@ -2,7 +2,8 @@ import Link from "next/link";
 import Icon from "@/components/Icon";
 import Reveal from "@/components/Reveal";
 import ProductCard from "@/components/ProductCard";
-import { GITHUB_ORG, products } from "@/lib/products";
+import { getHomeGridProducts } from "@/lib/products";
+import { GITHUB_ORG } from "@/lib/site";
 
 const PHILOSOPHY = [
   {
@@ -28,9 +29,7 @@ const PHILOSOPHY = [
 ];
 
 export default function HomePage() {
-  const featured = products.filter((p) => p.featured);
-  const rest = products.filter((p) => !p.featured).slice(0, 2);
-  const homeGrid = [...featured, ...rest];
+  const homeGrid = getHomeGridProducts();
 
   return (
     <>

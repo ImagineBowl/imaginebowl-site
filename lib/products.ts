@@ -98,12 +98,13 @@ export const products: Product[] = [
       "A native iOS app for reading and listening to the Quran. Browse surahs and juz, read Arabic with translation, search by reference, and follow synced ayah-by-ayah recitation with offline support.",
     platforms: ["iOS"],
     tags: ["iOS"],
-    status: "Beta",
+    status: "Live",
     icon: "menu_book",
     iconImage: "/icons/qurandaily.png",
     accent: "from-[#19c37d] to-[#adc6ff]",
     repo: "https://github.com/ImagineBowl/QuranDaily",
-    downloadLabel: "Join Beta",
+    downloadUrl: "https://apps.apple.com/app/qurandaily/id6776009355",
+    downloadLabel: "App Store",
     features: [
       { icon: "auto_stories", title: "Read", description: "Arabic text with translation, adjustable font size and theme." },
       { icon: "search", title: "Smart search", description: "Find by surah name, ayah reference, or ayah text." },
@@ -129,6 +130,7 @@ export const products: Product[] = [
     status: "Beta",
     icon: "equalizer",
     accent: "from-[#ff7a45] to-[#ffb595]",
+    iconImage: "/icons/eqfi.png",
     repo: "https://github.com/ImagineBowl/EQfi",
     downloadUrl: "https://github.com/ImagineBowl/EQfi/releases/download/v1.0.0/EQfi-1.0.0.dmg",
     downloadLabel: "Download",
@@ -157,6 +159,7 @@ export const products: Product[] = [
     status: "Beta",
     icon: "stylus_note",
     accent: "from-[#adc6ff] to-[#7c5cff]",
+    iconImage: "/icons/viberite.png",
     repo: "https://github.com/ImagineBowl/VibeRite",
     downloadLabel: "Download",
     features: [
@@ -184,6 +187,7 @@ export const products: Product[] = [
     status: "Live",
     icon: "sync_alt",
     accent: "from-[#4b8eff] to-[#19c37d]",
+    iconImage: "/icons/audioconverter.png",
     repo: "https://github.com/ImagineBowl/AudioConverter",
     downloadLabel: "Open App",
     features: [
@@ -211,6 +215,7 @@ export const products: Product[] = [
     status: "Live",
     icon: "summarize",
     accent: "from-[#7c5cff] to-[#4b8eff]",
+    iconImage: "/icons/ai-page-summarizer.png",
     repo: "https://github.com/ImagineBowl/AI-Page-Summarizer",
     downloadLabel: "Get Extension",
     features: [
@@ -229,11 +234,14 @@ export const products: Product[] = [
   },
 ];
 
-export const GITHUB_ORG = "https://github.com/ImagineBowl";
-export const CONTACT_EMAIL = "hello@imagine-bowl.com";
-
 export function getProduct(slug: string): Product | undefined {
   return products.find((p) => p.slug === slug);
+}
+
+export function getHomeGridProducts(): Product[] {
+  const featured = products.filter((p) => p.featured);
+  const rest = products.filter((p) => !p.featured).slice(0, 2);
+  return [...featured, ...rest];
 }
 
 export const platformFilters: ("All" | Platform)[] = [

@@ -17,9 +17,23 @@ export function generateMetadata({
 }): Metadata {
   const product = getProduct(params.slug);
   if (!product) return { title: "Not found" };
+
+  const ogImage = product.iconImage ?? "/logo.png";
+
   return {
     title: product.name,
     description: product.tagline,
+    openGraph: {
+      title: product.name,
+      description: product.tagline,
+      images: [{ url: ogImage, alt: `${product.name} icon` }],
+    },
+    twitter: {
+      card: "summary",
+      title: product.name,
+      description: product.tagline,
+      images: [ogImage],
+    },
   };
 }
 

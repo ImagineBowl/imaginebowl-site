@@ -14,11 +14,12 @@ export default function ProductsGrid() {
 
   return (
     <>
-      <div className="flex flex-wrap gap-3 mb-12">
+      <div className="flex flex-wrap gap-3 mb-12" role="group" aria-label="Filter by platform">
         {platformFilters.map((f) => (
           <button
             key={f}
             type="button"
+            aria-pressed={filter === f}
             onClick={() => setFilter(f)}
             className={
               filter === f

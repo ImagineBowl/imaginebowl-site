@@ -27,7 +27,7 @@ export default function ProductTile({ product, size = "md" }: ProductTileProps) 
           width={s.px}
           height={s.px}
           className="h-full w-full object-cover"
-          priority={product.slug === "sonance" && size === "lg"}
+          priority={product.featured === true && size === "lg"}
         />
       </span>
     );

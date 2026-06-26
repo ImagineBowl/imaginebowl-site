@@ -6,7 +6,7 @@ import { useEffect, useState } from "react";
 import BrandLogo from "./BrandLogo";
 import Icon from "./Icon";
 import ThemeToggle from "./ThemeToggle";
-import { CONTACT_EMAIL, GITHUB_ORG } from "@/lib/products";
+import { CONTACT_EMAIL, GITHUB_ORG } from "@/lib/site";
 
 const LINKS = [
   { href: "/products", label: "Products" },
@@ -72,6 +72,8 @@ export default function Navbar() {
           <button
             type="button"
             aria-label="Toggle menu"
+            aria-expanded={open}
+            aria-controls="mobile-nav"
             className="md:hidden flex items-center justify-center h-9 w-9 rounded-full text-on-surface hover:bg-on-surface/[0.06] transition-colors"
             onClick={() => setOpen((v) => !v)}
           >
@@ -81,7 +83,10 @@ export default function Navbar() {
       </nav>
 
       {open && (
-        <div className="md:hidden glass-header border-t border-border-subtle px-gutter py-4 flex flex-col gap-4">
+        <div
+          id="mobile-nav"
+          className="md:hidden glass-header border-t border-border-subtle px-gutter py-4 flex flex-col gap-4"
+        >
           {LINKS.map((l) =>
             l.external ? (
               <a

@@ -83,6 +83,10 @@ Set `iconImage: "/icons/your-app.png"` on a product in `lib/products.ts`. Drop
 PNGs in `public/icons/`. Without `iconImage`, tiles use gradient + Material
 Symbols.
 
+Placeholder gradient icons for EQfi, VibeRite, AudioConverter, and AI Page
+Summarizer can be replaced with final app artwork at any time — just overwrite
+the PNG in `public/icons/` (no code changes needed).
+
 ## Deployment (Vercel + imagine-bowl.com)
 
 1. Push this repo to GitHub.

@@ -4,6 +4,7 @@ import "./globals.css";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import ThemeScript from "@/components/ThemeScript";
+import { SITE_URL } from "@/lib/site";
 
 const inter = Inter({
   subsets: ["latin"],
@@ -19,7 +20,7 @@ const jetbrains = JetBrains_Mono({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://www.imagine-bowl.com"),
+  metadataBase: new URL(SITE_URL),
   title: {
     default: "ImagineBowl — AI-powered tools, crafted with care",
     template: "%s — ImagineBowl",
@@ -30,7 +31,7 @@ export const metadata: Metadata = {
     title: "ImagineBowl",
     description:
       "Private, local-first, AI-powered tools for iOS, macOS, and the web.",
-    url: "https://www.imagine-bowl.com",
+    url: SITE_URL,
     siteName: "ImagineBowl",
     type: "website",
     images: [{ url: "/logo.png", width: 1024, height: 1024, alt: "ImagineBowl" }],
@@ -50,10 +51,6 @@ export default function RootLayout({
     <html lang="en" className={`${inter.variable} ${jetbrains.variable}`} suppressHydrationWarning>
       <head>
         <ThemeScript />
-        <link
-          rel="stylesheet"
-          href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&display=swap"
-        />
       </head>
       <body className="font-body-md text-body-md bg-background text-on-surface overflow-x-hidden selection:bg-primary selection:text-on-primary">
         <Navbar />

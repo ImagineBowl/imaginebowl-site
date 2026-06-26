@@ -3,7 +3,7 @@ import Link from "next/link";
 import AboutStudioLogo from "@/components/AboutStudioLogo";
 import Icon from "@/components/Icon";
 import Reveal from "@/components/Reveal";
-import { CONTACT_EMAIL, GITHUB_ORG } from "@/lib/products";
+import { CONTACT_EMAIL, GITHUB_ORG } from "@/lib/site";
 
 export const metadata: Metadata = {
   title: "About",

@@ -1,7 +1,8 @@
 import Link from "next/link";
 import BrandLogo from "./BrandLogo";
 import Icon from "./Icon";
-import { CONTACT_EMAIL, GITHUB_ORG, products } from "@/lib/products";
+import { products } from "@/lib/products";
+import { CONTACT_EMAIL, GITHUB_ORG } from "@/lib/site";
 
 export default function Footer() {
   const topProducts = products.filter((p) => p.featured);
